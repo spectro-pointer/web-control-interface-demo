@@ -4,7 +4,7 @@ import xmlrpclib
 app = Flask(__name__)
 
 # Enter your server URL below
-server_url = 'http://192.168.0.101:8000/';
+server_url = 'http://192.168.0.101:8001/';
 server = xmlrpclib.Server(server_url);
 
 # Main logic tree for controller
