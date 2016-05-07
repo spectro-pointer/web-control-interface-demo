@@ -1,4 +1,16 @@
+<html>
+<head>
 <style>
+    div {
+        display: flex;
+    }
+    .container {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+        min-width: 100vw;
+    }
     input {
         width:100px;
         height:100px;
@@ -12,6 +24,7 @@
         background-position: center;
         background-size:cover;
     }
+
     input#right {
         background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3Ny4xNzUgNDc3LjE3NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDc3LjE3NSA0NzcuMTc1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnPgoJPHBhdGggZD0iTTM2MC43MzEsMjI5LjA3NWwtMjI1LjEtMjI1LjFjLTUuMy01LjMtMTMuOC01LjMtMTkuMSwwcy01LjMsMTMuOCwwLDE5LjFsMjE1LjUsMjE1LjVsLTIxNS41LDIxNS41ICAgYy01LjMsNS4zLTUuMywxMy44LDAsMTkuMWMyLjYsMi42LDYuMSw0LDkuNSw0YzMuNCwwLDYuOS0xLjMsOS41LTRsMjI1LjEtMjI1LjFDMzY1LjkzMSwyNDIuODc1LDM2NS45MzEsMjM0LjI3NSwzNjAuNzMxLDIyOS4wNzV6ICAgIiBmaWxsPSIjRDgwMDI3Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
         background-repeat: no-repeat;
@@ -50,11 +63,22 @@
         background-size:cover;
     }
 </style>
-
+</head>
+<body>
 <form action="/secreturl" method="post">
-<input type="submit" id="left" name="submit" value="Left">
-<input type="submit" id="right" name="submit" value="Right">
-<input type="submit" id="up" name="submit" value="Up">
-<input type="submit" id="down" name="submit" value="Down">
-<input type="submit" id="stop" name="submit" value="Stop">
+    <div class="container">
+        <div class="top">
+            <input type="submit" id="up" name="submit" value="Up">
+        </div>
+        <div class="middle">
+            <input type="submit" id="left" name="submit" value="Left">
+            <input type="submit" id="stop" name="submit" value="Stop">
+            <input type="submit" id="right" name="submit" value="Right">
+        </div>
+        <div class="bottom">
+            <input type="submit" id="down" name="submit" value="Down">
+        </div>
+    </div>
 </form>
+</body>
+</html>
