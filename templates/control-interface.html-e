@@ -1,4 +1,7 @@
 <form action="/secreturl" method="post">
-<input type="submit" name="submit" value="Do Something">
-<input type="submit" name="submit" value="Do Something Else">
+<input type="submit" id="left" name="submit" value="Left">
+<input type="submit" id="right" name="submit" value="Right">
+<input type="submit" id="left" name="submit" value="Up">
+<input type="submit" id="left" name="submit" value="Down">
+<input type="submit" id="left" name="submit" value="Stop">
 </form>
