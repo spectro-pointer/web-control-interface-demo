@@ -16,9 +16,9 @@ def index():
         elif request.form['submit'] == 'Right':
             result = server.set_motores(3, "Busca")
         elif request.form['submit'] == 'Down':
-            result = server.set_motores(4, "Busca")
-        elif request.form['submit'] == 'Up':
             result = server.set_motores(12, "Busca")
+        elif request.form['submit'] == 'Up':
+            result = server.set_motores(4, "Busca")
         elif request.form['submit'] == 'Stop':
             result = server.set_motores(0, "Busca")
     return render_template('control-interface.html')  
