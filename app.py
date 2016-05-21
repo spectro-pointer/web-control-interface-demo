@@ -32,7 +32,7 @@ def index():
         elif request.form['submit'] == 'Limpiador_ON':
             result = server.set_motores(32,"Mant")
         elif request.form['submit'] == 'Salidas_OFF':
-            result = server.set_motores(0,"Mant")
+            result = server.set_motores(224,"Mant")
     return render_template('control-interface.html')  
 
 # Run the web app
